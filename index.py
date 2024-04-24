@@ -16,7 +16,7 @@ def main():
     if(results is None):
         return
     
-    formatted_response = generating_response_localhost(query_text, results)
+    formatted_response = generating_response(query_text, results)
     print(formatted_response)
     
     

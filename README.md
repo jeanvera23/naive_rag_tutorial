@@ -11,7 +11,8 @@ python knowledge_base.py
 ```
 
 3. Create your retrieval system
-
+To run the llm in your local install Ollama (https://ollama.com/)
+Otherwise get an OpenAI key an put it in your env as OPENAI_API_KEY
 ```bash 
 python retrieval_system.py
 ```

@@ -22,7 +22,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 DB_PATH = "./chroma"
 PDFS_PATH = "./data/pdf"
 def load_documents():
-    loader = PyPDFDirectoryLoader(PDFS_PATH,extract_images=True)
+    loader = PyPDFDirectoryLoader(PDFS_PATH)
     documents = loader.load()
     return documents
 

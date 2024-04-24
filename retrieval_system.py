@@ -47,7 +47,7 @@ def generating_response(query_text, results):
     prompt = prompt_template.format(context=context_text, question=query_text)
     print(prompt)
 
-    model = ChatOpenAI()
+    model = ChatOpenAI(model=os.getenv("OPENAI_MODEL"))
     response_text = model.invoke(prompt)
 
     sources = [doc.metadata.get("source", None) for doc, _score in results]
