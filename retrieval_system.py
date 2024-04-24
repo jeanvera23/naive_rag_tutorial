@@ -36,7 +36,7 @@ def retrieving_from_db(query_text):
     
      # Search for the 3 more relevant into the DB.
     results = db.similarity_search_with_relevance_scores(query_text, k=3)
-    if len(results) == 0 or results[0][1] < 0.7:
+    if len(results) == 0 or results[0][1] < 0.:
         print(f"Unable to find matching results.")
         return
     return results
